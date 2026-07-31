@@ -61,18 +61,13 @@ const start = async () => {
     //     email: 'thulan0610@gmail.com',
     //     password: 'anh123456'
     // });
+
+    server.listen(port, () => {
+      console.log("Server is running on port", port);
+    });
   } catch (error) {
     console.log(error);
   }
 };
 
 start();
-
-// On Vercel the app is invoked as a function, so binding a port would be wrong.
-if (!process.env.VERCEL) {
-  server.listen(port, () => {
-    console.log("Server is running on port", port);
-  });
-}
-
-export default app;
