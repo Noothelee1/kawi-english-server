@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "F",
   "license": "MIT",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "start": "nodemon index.js"
   },
